@@ -21,4 +21,48 @@ public class Generator {
 			data[i] = nums[n];
 		}
 	}
+	public static void generate25(int[] data) {
+		for(int i = 0; i < data.length * 0.25;i++) {
+			data[i] = 10;
+		}
+		for(int i =  (int) ((int)data.length * 0.25); i < data.length;i++) {
+			int n = (int)Math.floor(Math.random() * nums.length);
+			data[i] = nums[n];
+		}
+	}
+	public static void generate50(int[] data) {
+		for(int i = 0; i < data.length * 0.5;i++) {
+			data[i] = 10;
+		}
+		for(int i =  (int) ((int)data.length * 0.5); i < data.length;i++) {
+			int n = (int)Math.floor(Math.random() * nums.length);
+			data[i] = nums[n];
+		}
+	}
+	public static void generate75(int[] data) {
+		for(int i = 0; i < data.length * 0.75;i++) {
+			data[i] = 10;
+		}
+		for(int i =  (int) ((int)data.length * 0.75); i < data.length;i++) {
+			int n = (int)Math.floor(Math.random() * nums.length);
+			data[i] = nums[n];
+		}
+	}
+	public static void generate1(int [] data) {
+		for(int i = 0; i < data.length; i++) {
+			
+			data[i] = 10;
+		}
+	}
+	
+	public static void generate2(int [] data) {
+		for(int i = 0; i < data.length/2; i++) {
+			
+			data[i] = 99;
+		}
+		for(int i = data.length/2; i < data.length; i++) {
+			
+			data[i] = 10;
+		}
+	}
 }
